@@ -1,11 +1,11 @@
 @import "variables";
 
 .header {
-
   nav {
     padding-left: 1.5rem; 
     padding-right: 1.5rem;
-    margin: auto;
+    padding-bottom: 0.3rem;
+    margin: 0.3rem auto;
     width: 64rem;
 
     @include breakpoint-down(medium) {
@@ -13,7 +13,7 @@
       padding-left: 0.8rem; 
     }
 
-    > button {
+    > .btn {
       font-size: $font-a;
     }
   }
@@ -30,7 +30,12 @@
       }
     }
 
-
+    &:hover {
+      > img {
+        height: 4.205rem;
+        margin: 0.085rem 0.085rem;
+      }
+    }
   }
 
   &__menu { //Mobile Menu
@@ -60,7 +65,7 @@
       }
 
       &:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 3px;
       }
     }
   }
