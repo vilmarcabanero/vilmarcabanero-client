@@ -1,0 +1,9 @@
+@import "variables";
+
+.hero {
+  background-color: $veryLightGray;
+  width: 100%;
+  height: 500px;
+  border-top: 1.5px solid #ECECEC;
+  border-bottom: 1px solid $lightGrayishBlue;
+}
