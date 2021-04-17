@@ -6,7 +6,11 @@ const HeaderLinks = () => {
 		<StyledHeaderLinks className='headerlinks'>
 			<a href='/'>Skills</a>
 			<a href='/'>Entropiya</a>
-			<a href='/'>Projects</a>
+			<a href='/'>Mini Projects</a>
+			<a id='projects' href='/'>
+				Projects
+				<StyledFaAngleDownProjects className='projects' />
+			</a>
 			<a href='/'>About Me</a>
 		</StyledHeaderLinks>
 	)
@@ -23,7 +27,6 @@ const fontA = '1.05rem'
 // `;
 
 const StyledHeaderLinks = styled.div`
-
 	display: flex;
 	flex-flow: row;
 	> a {
@@ -62,28 +65,28 @@ const StyledHeaderLinks = styled.div`
 	}
 `
 
-const StyledFaAngleDownCourses = styled(FaAngleDown)`
-	margin-left: 2px;
-	font-size: 0.9rem;
-	color: ${celticBlue};
-`
-
-const StyledFaAngleDownMCQs = styled(FaAngleDown)`
-	margin-left: 2px;
-	font-size: 0.9rem;
-	color: ${celticBlue};
-`
-
 const StyledFaAngleDownProjects = styled(FaAngleDown)`
 	margin-left: 2px;
 	font-size: 0.9rem;
 	color: ${celticBlue};
 `
 
-const StyledFaAngleDownAboutMe = styled(FaAngleDown)`
-	margin-left: 2px;
-	font-size: 0.9rem;
-	color: ${celticBlue};
-`
+// const StyledFaAngleDownMCQs = styled(FaAngleDown)`
+// 	margin-left: 2px;
+// 	font-size: 0.9rem;
+// 	color: ${celticBlue};
+// `
+
+// const StyledFaAngleDownProjects = styled(FaAngleDown)`
+// 	margin-left: 2px;
+// 	font-size: 0.9rem;
+// 	color: ${celticBlue};
+// `
+
+// const StyledFaAngleDownAboutMe = styled(FaAngleDown)`
+// 	margin-left: 2px;
+// 	font-size: 0.9rem;
+// 	color: ${celticBlue};
+// `
 
 export default HeaderLinks
