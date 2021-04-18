@@ -7,7 +7,7 @@ const Hero = () => {
 const veryLightGray = 'hsl(0, 0%, 98%)'
 
 const HeroStyle = styled.header`
-	background-color: ${veryLightGray};
+	/* background-color: ${veryLightGray}; */
 	width: 100%;
 	height: 500px;
 `
