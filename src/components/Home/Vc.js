@@ -5,8 +5,10 @@ const Vc = () => {
 	return (
 		<StyledVc>
 			<div>
-				<span>{'<'}</span>
-				<span id='Vc'>Vc</span>
+				<span>
+					{'<'} <span id='Vc'>Vc</span>
+				</span>
+
 				<span>{'/>'}</span>
 			</div>
 		</StyledVc>
@@ -14,21 +16,32 @@ const Vc = () => {
 }
 
 const StyledVc = styled.div`
-	/* position: relative; */
+	position: relative;
 	display: flex;
-  flex-flow: column;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
-  margin-top: calc((100vh - 40rem)/2);
+	@media (min-width: 40rem) {
+		margin-top: calc((100vh - 40rem) / 2);
+	}
+
+	@media (max-width: 40rem) {
+		margin-top: calc((100vh - 25rem) / 2);
+	}
 
 	> div {
 		width: 40rem;
 		height: 40rem;
 		background-color: #343434;
 		color: white;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		font-size: 2rem;
+		display: grid;
+		@media (max-width: 40rem) {
+			width: 25rem;
+			height: 25rem;
+		}
+
+		#Vc {
+		}
 	}
 `
 
