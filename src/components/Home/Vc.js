@@ -94,7 +94,7 @@ const Vc = () => {
 						<span className='braces'>{'{'}</span>{' '}
 						<a
 							className='link'
-							href='https://www.niventa.net/'
+							href='https://www.github.com/vilmarcabanero'
 							target='_blank'
 							rel='noreferrer'
 						>
@@ -113,7 +113,6 @@ const Vc = () => {
 }
 
 const StyledVc = styled.div`
-	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -124,15 +123,16 @@ const StyledVc = styled.div`
 
 	@media (max-width: 55rem) {
 		margin-top: calc((100vh - 35rem) / 2);
-    margin-left: auto;
-    margin-right: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	> div {
+    position: relative;
 		width: 55rem;
 		height: 45rem;
 		background: transparent;
-		background-color: #343434;
+		/* background-color: #343434; */
 		color: white;
 		font-size: 2rem;
 		display: grid;
@@ -156,13 +156,13 @@ const StyledVc = styled.div`
 			margin-left: 9rem;
 			@media (max-width: 55rem) {
 				margin-left: 4.5rem;
-
 			}
 		}
 
 		.string {
 			/* color: #20b2aa; */
 			color: #00cccc;
+      background-color: #343434; 
 			font-weight: 500;
 			display: inline-block;
 		}
@@ -178,6 +178,7 @@ const StyledVc = styled.div`
 		.link {
 			text-decoration: none;
 			color: #00cccc;
+      /* background-color: #343434;  */
 			font-style: italic;
 			font-weight: 500;
 			&:hover {
@@ -200,11 +201,17 @@ const StyledVc = styled.div`
 		}
 
 		.m2rem {
-			margin-left: 1.5rem;
+			margin-left: 3rem;
+			@media (max-width: 55rem) {
+				margin-left: 1.5rem;
+			}
 		}
 
 		.m4rem {
-			margin-left: 3rem;
+			margin-left: 6rem;
+			@media (max-width: 55rem) {
+				margin-left: 3rem;
+			}
 		}
 	}
 `
