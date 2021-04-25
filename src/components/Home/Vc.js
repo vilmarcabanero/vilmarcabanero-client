@@ -33,7 +33,7 @@ const Vc = () => {
 				<span className='attribute'>
 					startupProject1 <span className='equals'>=</span>{' '}
 					<span className='string'>
-						<span className='braces'>{'{'}</span>{' '}
+						{/* <span className='braces'>{'{'}</span>{' '} */}
 						<a
 							className='link'
 							href='https://www.entropiya.ph/'
@@ -42,14 +42,14 @@ const Vc = () => {
 						>
 							www.entropiya.ph
 						</a>{' '}
-						<span className='braces'>{'}'}</span>
+						{/* <span className='braces'>{'}'}</span> */}
 					</span>
 				</span>
 
 				<span className='attribute'>
 					startupProject2 <span className='equals'>=</span>{' '}
 					<span className='string'>
-						<span className='braces'>{'{'}</span>{' '}
+						{/* <span className='braces'>{'{'}</span>{' '} */}
 						<a
 							className='link'
 							href='https://www.niventa.net/'
@@ -58,14 +58,14 @@ const Vc = () => {
 						>
 							www.niventa.net
 						</a>{' '}
-						<span className='braces'>{'}'}</span>
+						{/* <span className='braces'>{'}'}</span> */}
 					</span>
 				</span>
 
 				<span className='attribute'>
 					webApps <span className='equals'>=</span>{' '}
 					<span className='string'>
-						<span className='braces'>{'{'}</span>{' '}
+						{/* <span className='braces'>{'{'}</span>{' '} */}
 						<a
 							className='link'
 							href='https://www.vilmarcabanero.com/apps'
@@ -74,7 +74,7 @@ const Vc = () => {
 						>
 							www.vilmarcabanero.com/apps
 						</a>{' '}
-						<span className='braces'>{'}'}</span>
+						{/* <span className='braces'>{'}'}</span> */}
 					</span>
 				</span>
 
@@ -91,7 +91,7 @@ const Vc = () => {
 				<span className='attribute'>
 					github <span className='equals'>=</span>{' '}
 					<span className='string'>
-						<span className='braces'>{'{'}</span>{' '}
+						{/* <span className='braces'>{'{'}</span>{' '} */}
 						<a
 							className='link'
 							href='https://www.github.com/vilmarcabanero'
@@ -100,7 +100,7 @@ const Vc = () => {
 						>
 							github.com/vilmarcabanero
 						</a>{' '}
-						<span className='braces'>{'}'}</span>
+						{/* <span className='braces'>{'}'}</span> */}
 					</span>
 				</span>
 
@@ -143,10 +143,17 @@ const StyledVc = styled.div`
 			font-size: 1.25rem;
 		}
 
+    @media (max-width: 22.5) {
+			font-size: 1rem;
+		}
+
 		#Vc {
 			font-size: 2.25rem;
 			color: #66cdaa;
 			@media (max-width: 55rem) {
+				font-size: 1.25rem;
+			}
+      @media (max-width: 22.5rem) {
 				font-size: 1.25rem;
 			}
 		}
@@ -154,17 +161,21 @@ const StyledVc = styled.div`
 		.attribute {
 			color: #6495ed;
 			margin-left: 9rem;
+      font-family: Comic Sans MS, Comic Sans, cursive;
+      font-style: italic;
 			@media (max-width: 55rem) {
-				margin-left: 4.5rem;
+				margin-left: 3rem;
 			}
 		}
 
 		.string {
 			/* color: #20b2aa; */
 			color: #00cccc;
-      background-color: #343434; 
+      font-style: normal;
+      /* background-color: #343434;  */
 			font-weight: 500;
 			display: inline-block;
+
 		}
 
 		.equals {
@@ -180,7 +191,7 @@ const StyledVc = styled.div`
 			color: #00cccc;
       /* background-color: #343434;  */
 			font-style: italic;
-			font-weight: 500;
+			font-weight: 375;
 			&:hover {
 				opacity: 0.8;
 				cursor: pointer;
@@ -203,14 +214,14 @@ const StyledVc = styled.div`
 		.m2rem {
 			margin-left: 3rem;
 			@media (max-width: 55rem) {
-				margin-left: 1.5rem;
+				margin-left: 1rem;
 			}
 		}
 
 		.m4rem {
 			margin-left: 6rem;
 			@media (max-width: 55rem) {
-				margin-left: 3rem;
+				margin-left: 2rem;
 			}
 		}
 	}
