@@ -1,10 +1,8 @@
 import React from 'react'
 // import Header from './components/Home/Header'
 // import Hero from './components/Home/Hero'
-// import ParticleBackground from './config/ParticleBackground'
-// import Particles from 'react-particles-js'
 import './App.scss'
-import ParticleBackground from './config/ParticleBackground'
+import ParticleBackground from './Particles/ParticleBackground'
 import logo from './assets/images/logo.png'
 
 class App extends React.Component {

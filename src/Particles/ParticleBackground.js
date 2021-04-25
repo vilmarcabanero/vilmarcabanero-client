@@ -8,6 +8,7 @@ export default function ParticleBackground() {
 		<StyledParticles>
 			<Particles className='particles' params={particleParams}></Particles>
 		</StyledParticles>
+		
 	)
 }
 
@@ -18,7 +19,7 @@ const StyledParticles = styled.div`
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #4398ff;
+	background-color: #343434;
 
 	.particles {
 		width: 100%;
