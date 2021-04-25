@@ -19,7 +19,6 @@ class App extends React.Component {
 					webkitallowfullscreen='true'
 					mozallowfullscreen='true'
 				></iframe>
-
 				<div>&nbsp;</div>
 				<img src={logo} alt='afdafd' />
 			</div>
