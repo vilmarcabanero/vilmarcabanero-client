@@ -26,13 +26,11 @@ const StyledHeader = styled.div`
 			display: flex;
 			justify-content: flex-end;
 			top: 2rem;
-			right: 2.5rem;
-			font-size: 2rem;
+			right: 2rem;
 			align-items: center;
 			@media (max-width: 35rem) {
-				right: 1rem;
-				top: 1rem;
-				font-size: 1.7rem;
+				right: 0.25rem;
+				top: 0.5rem;
 			}
 
 			> i {
@@ -45,6 +43,11 @@ const StyledHeader = styled.div`
 					opacity: 0.8;
 					cursor: pointer;
 				}
+
+				@media (max-width: 35rem) {
+					font-size: 2.5rem;
+			}
+				
 			}
 		}
 	}
@@ -56,10 +59,16 @@ const StyledUser = styled(FaUser)`
 	color: white;
 	/* padding-right: 1rem;
 	padding-left: 1rem; */
+	padding-right: 1.5rem;
+	font-size: 3.25rem;
 	&:hover {
 		opacity: 0.8;
 		cursor: pointer;
 	}
+
+	@media (max-width: 35rem) {
+					font-size: 3rem;
+			}
 `
 
 export default Header
