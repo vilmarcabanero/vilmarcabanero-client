@@ -15,7 +15,7 @@ const Vc = () => {
 				<span className='return m2rem'>return (</span>
 				<span>
 					<span id='symbol1' className='equals m4rem'>{'<'} </span>
-					<span id='Vc'>Vc</span>
+					<span id='Vc'>VilmarCabanero</span>
 				</span>
 				<span className='attribute'>
 					name <span className='equals'>=</span>{' '}
@@ -147,7 +147,6 @@ const StyledVc = styled.div`
 		}
 
 		#Vc {
-			font-size: 2.25rem;
 			color: #66cdaa;
 			@media (max-width: 55rem) {
 				font-size: 1.25rem;
