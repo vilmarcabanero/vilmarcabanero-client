@@ -48,7 +48,7 @@
 // 				@media (max-width: 35rem) {
 // 					font-size: 2.5rem;
 // 			}
-				
+
 // 			} */
 // 		}
 // 	}
@@ -69,7 +69,7 @@
 
 // 	@media (max-width: 35rem) {
 // 		font-size: 2.9rem;
-		
+
 // 	}
 // `
 
@@ -95,22 +95,19 @@
 // export default Header
 
 //New Header
-import logo from '../../assets/images/header.png'
-// import HeaderLinks from './HeaderLinks'
-// import Burger from './Burger'
 import styled from 'styled-components'
+import VcLogo from './VcLogo'
+import { FaUser, FaTh } from 'react-icons/fa'
 
 const Header = () => {
 	return (
-			<StyledHeader>
-				<a href='/'>
-					<img src={logo} alt='logo' />
-				</a>
-				{/* <HeaderLinks /> */}
-				<button className='button'>Sign in</button>
-
-				{/* <Burger /> */}
-			</StyledHeader>
+		<StyledHeader>
+			<VcLogo />
+			<div>
+				<StyledTh />
+				<StyledUser />
+			</div>
+		</StyledHeader>
 	)
 }
 
@@ -128,9 +125,8 @@ const StyledHeader = styled.nav`
 
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+	padding-top: 1rem;
 	width: 100%;
-
-	
 
 	@media (max-width: 76rem) {
 		width: 100%;
@@ -140,8 +136,9 @@ const StyledHeader = styled.nav`
 
 	@media (max-width: 40rem) {
 		width: 100%;
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		padding-top: 0.25rem;
 	}
 
 	/* .forButton {
@@ -186,6 +183,46 @@ const StyledHeader = styled.nav`
 				margin: 0.085rem 0.225rem;
 			}
 		}
+	}
+`
+
+const StyledUser = styled(FaUser)`
+	/* right: 2rem;
+			top: 0.5rem; */
+	font-weight: 400;
+	color: white;
+	/* padding-right: 1rem;
+	padding-left: 1rem; */
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 3rem;
+	&:hover {
+		opacity: 0.8;
+		cursor: pointer;
+	}
+
+	@media (max-width: 35rem) {
+		font-size: 2.45rem;
+	}
+`
+
+const StyledTh = styled(FaTh)`
+	/* right: 2rem;
+			top: 0.5rem; */
+	font-weight: 400;
+	color: white;
+	/* padding-right: 1rem;
+	padding-left: 1rem; */
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 3.45rem;
+	&:hover {
+		opacity: 0.8;
+		cursor: pointer;
+	}
+
+	@media (max-width: 35rem) {
+		font-size: 2.75rem;
 	}
 `
 
