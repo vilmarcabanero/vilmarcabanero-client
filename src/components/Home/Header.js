@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 // import RightIcons from './RightIcons';
 import VcLogo from './VcLogo'
-import { FaUser} from 'react-icons/fa'
+import { FaUser, FaTh } from 'react-icons/fa'
 
 const Header = () => {
 	return (
@@ -9,7 +9,8 @@ const Header = () => {
 			<div>
 				<VcLogo />
 				<div className='icon-container'>
-					<i class='material-icons'>apps</i>
+					<StyledTh />
+					{/* <i class='material-icons'>apps</i> */}
 					<StyledUser />
 				</div>
 			</div>
@@ -33,7 +34,7 @@ const StyledHeader = styled.div`
 				top: 0.5rem;
 			}
 
-			> i {
+			/* > i {
 				font-weight: 400;
 				color: white;
 				font-size: 3rem;
@@ -48,7 +49,7 @@ const StyledHeader = styled.div`
 					font-size: 2.5rem;
 			}
 				
-			}
+			} */
 		}
 	}
 `
@@ -67,8 +68,27 @@ const StyledUser = styled(FaUser)`
 	}
 
 	@media (max-width: 35rem) {
-					font-size: 3rem;
-			}
+		font-size: 3rem;
+	}
+`
+
+const StyledTh = styled(FaTh)`
+	/* right: 2rem;
+			top: 0.5rem; */
+	font-weight: 400;
+	color: white;
+	/* padding-right: 1rem;
+	padding-left: 1rem; */
+	padding-right: 1.5rem;
+	font-size: 3.7rem;
+	&:hover {
+		opacity: 0.8;
+		cursor: pointer;
+	}
+
+	@media (max-width: 35rem) {
+		font-size: 3.4rem;
+	}
 `
 
 export default Header

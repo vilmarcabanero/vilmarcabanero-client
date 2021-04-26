@@ -103,6 +103,22 @@ const Vc = () => {
 					</span>
 				</span>
 
+				<span className='attribute'>
+					email <span className='equals'>=</span>{' '}
+					<span className='string'>
+						{/* <span className='braces'>{'{'}</span>{' '} */}
+						<a
+							className='link'
+							href='https://www.github.com/vilmarcabanero'
+							target='_blank'
+							rel='noreferrer'
+						>
+							contact@vilmarcabanero.com
+						</a>{' '}
+						{/* <span className='braces'>{'}'}</span> */}
+					</span>
+				</span>
+
 				<span id='symbol2' className='equals m4rem'>{'/>'}</span>
 				<span className='return m2rem'>)</span>
 				<span className='braces'>{'}'}</span>
@@ -117,7 +133,7 @@ const StyledVc = styled.div`
 	align-items: center;
 	background: transparent;
 	@media (min-width: 45rem) {
-		margin-top: calc((100vh - 52rem) / 2);
+		margin-top: calc((100vh - 57rem) / 2);
 	}
 
 	@media (max-width: 55rem) {
