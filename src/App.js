@@ -2,7 +2,7 @@ import React from 'react'
 // import Header from './components/Home/Header'
 // import Hero from './components/Home/Hero'
 import './App.scss'
-import ParticleBackground from './Particles/ParticleBackground'
+import ParticleBackground from './components/Particles/ParticleBackground'
 import Vc from './components/Home/Vc'
 import Header from './components/Home/Header'
 
