@@ -39,7 +39,7 @@ const Vc = () => {
 							target='_blank'
 							rel='noreferrer'
 						>
-							www.entropiya.ph
+							'www.entropiya.ph'
 						</a>{' '}
 						{/* <span className='braces'>{'}'}</span> */}
 					</span>
@@ -55,7 +55,7 @@ const Vc = () => {
 							target='_blank'
 							rel='noreferrer'
 						>
-							www.niventa.net
+							'www.niventa.net'
 						</a>{' '}
 						{/* <span className='braces'>{'}'}</span> */}
 					</span>
@@ -71,7 +71,7 @@ const Vc = () => {
 							target='_blank'
 							rel='noreferrer'
 						>
-							www.vilmarcabanero.com/apps
+							'www.vilmarcabanero.com/apps'
 						</a>{' '}
 						{/* <span className='braces'>{'}'}</span> */}
 					</span>
@@ -97,7 +97,7 @@ const Vc = () => {
 							target='_blank'
 							rel='noreferrer'
 						>
-							github.com/vilmarcabanero
+							'github.com/vilmarcabanero'
 						</a>{' '}
 						{/* <span className='braces'>{'}'}</span> */}
 					</span>
@@ -113,7 +113,7 @@ const Vc = () => {
 							target='_blank'
 							rel='noreferrer'
 						>
-							contact@vilmarcabanero.com
+							'contact@vilmarcabanero.com'
 						</a>{' '}
 						{/* <span className='braces'>{'}'}</span> */}
 					</span>
@@ -131,7 +131,7 @@ const StyledVc = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: transparent;
+	/* background: transparent; */
 	@media (min-width: 45rem) {
 		margin-top: calc((100vh - 57rem) / 2);
 	}
@@ -152,7 +152,7 @@ const StyledVc = styled.div`
     position: relative;
 		width: 55rem;
 		height: 45rem;
-		background: transparent;
+		/* background: transparent; */
 		/* background-color: #343434; */
 		color: white;
 		font-size: 2rem;
@@ -220,7 +220,7 @@ const StyledVc = styled.div`
 			text-decoration: none;
 			color: #00cccc;
       /* background-color: #343434;  */
-			font-style: italic;
+			/* font-style: italic; */
 			font-weight: 375;
 			&:hover {
 				opacity: 0.8;
