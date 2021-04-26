@@ -109,7 +109,7 @@ const Vc = () => {
 						{/* <span className='braces'>{'{'}</span>{' '} */}
 						<a
 							className='link'
-							href='https://www.github.com/vilmarcabanero'
+							href='https://mail.google.com/'
 							target='_blank'
 							rel='noreferrer'
 						>
@@ -185,7 +185,7 @@ const StyledVc = styled.div`
 		.attribute {
 			color: #6495ed;
 			margin-left: 9rem;
-      font-family: Comic Sans MS, Comic Sans, cursive;
+      /* font-family: Comic Sans MS, Comic Sans, cursive; */
       font-style: italic;
 			@media (max-width: 55rem) {
 				margin-left: 3rem;
