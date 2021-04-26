@@ -133,17 +133,17 @@ const StyledVc = styled.div`
 	align-items: center;
 	/* background: transparent; */
 	@media (min-width: 45rem) {
-		margin-top: calc((100vh - 57rem) / 2);
+		margin-top: 1rem;
 	}
 
 	@media (max-width: 55rem) {
-		margin-top: calc((100vh - 35rem) / 2);
+		margin-top: 1rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	@media (max-width: 35rem) {
-		margin-top: calc((100vh - 40rem) / 2);
+		margin-top: 0rem;
 		margin-left: auto;
 		margin-right: auto;
 	}

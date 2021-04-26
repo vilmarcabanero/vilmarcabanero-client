@@ -21,13 +21,13 @@ const Header = () => {
 const StyledHeader = styled.div`
 	> div {
 		position: relative;
-
 		.icon-container {
 			position: absolute;
 			display: flex;
 			justify-content: flex-end;
 			top: 0rem;
 			right: 2rem;
+			padding-top: 0;
 			align-items: center;
 			@media (max-width: 35rem) {
 				right: 0.25rem;
@@ -69,6 +69,7 @@ const StyledUser = styled(FaUser)`
 
 	@media (max-width: 35rem) {
 		font-size: 2.9rem;
+		
 	}
 `
 
