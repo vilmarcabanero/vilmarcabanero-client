@@ -15,7 +15,7 @@ const Vc = () => {
 				<span className='return m2rem'>return (</span>
 				<span>
 					<span id='symbol1' className='equals m4rem'>{'<'} </span>
-					<span id='Vc'>VilmarCabanero</span>
+					<span id='Vc'>StyledVc</span>
 				</span>
 				<span className='attribute'>
 					name <span className='equals'>=</span>{' '}
@@ -222,9 +222,11 @@ const StyledVc = styled.div`
       /* background-color: #343434;  */
 			/* font-style: italic; */
 			font-weight: 375;
+	
 			&:hover {
 				opacity: 0.8;
 				cursor: pointer;
+				font-weight: 500;
 			}
 		}
 
