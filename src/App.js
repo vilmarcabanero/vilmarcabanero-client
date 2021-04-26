@@ -4,6 +4,7 @@ import React from 'react'
 import './App.scss'
 import ParticleBackground from './Particles/ParticleBackground'
 import Vc from './components/Home/Vc'
+import Header from './components/Home/Header'
 
 
 class App extends React.Component {
@@ -11,7 +12,9 @@ class App extends React.Component {
 		return (
 			<>
 				<ParticleBackground />
-				<Vc/>
+				<Header/>
+				
+				<Vc />
 			</>
 		)
 	}

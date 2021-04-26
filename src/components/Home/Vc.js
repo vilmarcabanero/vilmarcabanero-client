@@ -1,4 +1,3 @@
-import vc2 from '../../assets/images/vc2.JPG'
 import styled from 'styled-components'
 
 const Vc = () => {
@@ -15,7 +14,7 @@ const Vc = () => {
 				</span>
 				<span className='return m2rem'>return (</span>
 				<span>
-					<span className='equals m4rem'>{'<'} </span>
+					<span id='symbol1' className='equals m4rem'>{'<'} </span>
 					<span id='Vc'>Vc</span>
 				</span>
 				<span className='attribute'>
@@ -104,7 +103,7 @@ const Vc = () => {
 					</span>
 				</span>
 
-				<span className='equals m4rem'>{'/>'}</span>
+				<span id='symbol2' className='equals m4rem'>{'/>'}</span>
 				<span className='return m2rem'>)</span>
 				<span className='braces'>{'}'}</span>
 			</div>
@@ -118,7 +117,7 @@ const StyledVc = styled.div`
 	align-items: center;
 	background: transparent;
 	@media (min-width: 45rem) {
-		margin-top: calc((100vh - 45rem) / 2);
+		margin-top: calc((100vh - 52rem) / 2);
 	}
 
 	@media (max-width: 55rem) {
@@ -157,6 +156,16 @@ const StyledVc = styled.div`
 				font-size: 1.25rem;
 			}
 		}
+
+    #symbol1, #symbol2 {
+      font-size: 2.25rem;
+			@media (max-width: 55rem) {
+				font-size: 1.25rem;
+			}
+      @media (max-width: 22.5rem) {
+				font-size: 1.25rem;
+			}
+    }
 
 		.attribute {
 			color: #6495ed;
