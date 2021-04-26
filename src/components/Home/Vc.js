@@ -142,6 +142,12 @@ const StyledVc = styled.div`
 		margin-right: auto;
 	}
 
+	@media (max-width: 35rem) {
+		margin-top: calc((100vh - 40rem) / 2);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	> div {
     position: relative;
 		width: 55rem;

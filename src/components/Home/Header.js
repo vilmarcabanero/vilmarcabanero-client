@@ -23,15 +23,15 @@ const StyledHeader = styled.div`
 		position: relative;
 
 		.icon-container {
-			position: fixed;
+			position: absolute;
 			display: flex;
 			justify-content: flex-end;
-			top: 2rem;
+			top: 0rem;
 			right: 2rem;
 			align-items: center;
 			@media (max-width: 35rem) {
 				right: 0.25rem;
-				top: 0.5rem;
+				top: 0rem;
 			}
 
 			/* > i {
@@ -68,7 +68,7 @@ const StyledUser = styled(FaUser)`
 	}
 
 	@media (max-width: 35rem) {
-		font-size: 3rem;
+		font-size: 2.9rem;
 	}
 `
 
@@ -87,7 +87,7 @@ const StyledTh = styled(FaTh)`
 	}
 
 	@media (max-width: 35rem) {
-		font-size: 3.4rem;
+		font-size: 3.25rem;
 	}
 `
 
