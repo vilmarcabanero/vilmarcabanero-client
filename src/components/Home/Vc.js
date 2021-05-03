@@ -133,17 +133,17 @@ const StyledVc = styled.div`
 	align-items: center;
 	/* background: transparent; */
 	@media (min-width: 45rem) {
-		margin-top: 1rem;
+		margin-top: 2rem;
 	}
 
 	@media (max-width: 55rem) {
-		margin-top: 1rem;
+		margin-top: 2rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	@media (max-width: 35rem) {
-		margin-top: 0rem;
+	@media (max-width: 30rem) {
+		margin-top: 2rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -240,7 +240,8 @@ const StyledVc = styled.div`
 		}
 
 		.function {
-			color: LightSkyBlue;
+			/* color: LightSkyBlue; */
+			color: #87cefa;
 		}
 
 		.m2rem {
